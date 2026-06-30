@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #14324a;
+}
+
+.alert-success {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+    border-left: 5px solid #10b981;
+    padding: 12px 16px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.alert-error {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+    border-left: 5px solid #dc2626;
+    padding: 12px 16px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2eee7;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #0d8f4f;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 96px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.menu a {
+    color: #14324a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu .button {
+    padding: 10px 16px;
+    color: #ffffff;
+    background: #0d8f4f;
+    border-radius: 6px;
+}
+
+.home-page {
+    min-height: 100vh;
+    background: #f6fbf8;
+}
+
+.hero {
+    padding: 70px 0 80px;
+    background: linear-gradient(120deg, #e8f8ef 0%, #ffffff 55%, #e9f4ff 100%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 42px;
+}
+
+.hero h1 {
+    max-width: 620px;
+    margin-bottom: 18px;
+    color: #0a6b42;
+    font-size: 44px;
+    line-height: 1.15;
+}
+
+.hero p {
+    max-width: 580px;
+    margin-bottom: 26px;
+    color: #425466;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background: #0d8f4f;
+}
+
+.btn-secondary {
+    color: #0d8f4f;
+    background: #ffffff;
+    border: 1px solid #b8dbc9;
+}
+
+.hero-logo {
+    padding: 34px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #dbeee4;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(20, 50, 74, 0.08);
+}
+
+.hero-logo img {
+    width: min(300px, 100%);
+    height: auto;
+}
+
+.blank-space {
+    min-height: 160px;
+    background: #ffffff;
+}
+
+.site-footer {
+    padding: 24px 0;
+    color: #ffffff;
+    text-align: center;
+    background: #0a6b42;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #eef8f2;
+}
+
+.register-page {
+    background: #eef6ff;
+}
+
+.form-box {
+    width: min(460px, 100%);
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #dbeee4;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(20, 50, 74, 0.08);
+}
+
+.form-box h1 {
+    margin-bottom: 8px;
+    color: #0a6b42;
+    font-size: 30px;
+}
+
+.register-page .form-box h1 {
+    color: #0b6fae;
+}
+
+.form-box p {
+    margin-bottom: 24px;
+    color: #526173;
+    line-height: 1.5;
+}
+
+.form-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-box input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    border: 1px solid #c9d8d0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 13px;
+    color: #ffffff;
+    background: #0d8f4f;
+    border: 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.register-page .form-box button {
+    background: #0b6fae;
+}
+
+.links {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.links a {
+    color: #0d8f4f;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-page .links a {
+    color: #0b6fae;
+}
+
+@media (max-width: 760px) {
+    .navbar,
+    .menu {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 42px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
