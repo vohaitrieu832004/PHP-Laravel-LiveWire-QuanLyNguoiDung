@@ -50,7 +50,7 @@
                     </td>
                     <td>
                         @if($req->status !== 'Hoàn thành')
-                            <button class="btn-approve" wire:click="openUpdate({{ $req->id }})">✏ Cập nhật</button>
+                            <button class="btn-approve" wire:click="openUpdate({{ $req->id }})"> Cập nhật</button>
                         @else
                             <span style="color:#9ca3af; font-size:13px;">Hoàn thành</span>
                         @endif
@@ -69,7 +69,7 @@
         <div class="modal-overlay" style="display:flex;">
             <div class="modal-box" style="width:480px;">
                 <div class="modal-header">
-                    <h2>✏ Cập nhật trạng thái</h2>
+                    <h2>Cập nhật trạng thái</h2>
                     <button class="modal-close" type="button" wire:click="closeUpdate">✕</button>
                 </div>
                 <div class="modal-body">

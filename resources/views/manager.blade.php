@@ -16,7 +16,8 @@
                 SaiGonFood
             </a>
             <nav class="menu">
-                <span style="font-weight:600;">{{ auth()->user()->name }} — {{ auth()->user()->department?->department_name }}</span>
+                <livewire:update-avatar />
+
                 <form method="POST" action="{{ route('logout') }}" class="logout-form">
                     @csrf
                     <button type="submit" class="button">Đăng xuất</button>
@@ -27,7 +28,7 @@
 
     <main>
         <div class="container" style="padding: 30px 0;">
-            <h2 style="margin-bottom:20px; color:#0a6b42;">📋 Danh sách phiếu đề nghị — {{ auth()->user()->department?->department_name }}</h2>
+            <h2 style="margin-bottom:20px; color:#0a6b42;">Danh sách phiếu đề nghị - {{ auth()->user()->department?->department_name }}</h2>
             <livewire:manager-request />
         </div>
     </main>

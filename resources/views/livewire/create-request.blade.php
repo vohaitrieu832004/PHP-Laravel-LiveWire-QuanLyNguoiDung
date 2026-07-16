@@ -11,7 +11,7 @@
         <div class="modal-box">
 
             <div class="modal-header">
-                <h2>📋 Tạo phiếu đề nghị</h2>
+                <h2>Tạo phiếu đề nghị</h2>
                 <button class="modal-close" type="button" onclick="document.getElementById('modal-create-request').style.display='none'">✕</button>
             </div>
 

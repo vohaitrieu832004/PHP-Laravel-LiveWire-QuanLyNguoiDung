@@ -16,6 +16,8 @@ class Request extends Model
         'request_date',
         'status',
         'completed_at',
+        'reject_reason',
+        'result',
     ];
 
     public function user()
